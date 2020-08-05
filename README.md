@@ -1,14 +1,11 @@
-# tkg-demo
-Sample yaml for TKG demo
+# Demo Apps for Tanzu Kubernetes Grid(TKG)
+This repo intends to perform a demonstration or practice of operation on [Tanzu Kubernetes Grid](https://tanzu.vmware.com/jp/tanzu) cluster.
 
-```
-k create ns yelb
-k create ns metallb-system
-k create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
-k apply -n metallb-system -f lb.yaml
-k apply -n metallb-system -f lb-config.yaml
-k apply -f yelb-lb.yaml
-k -n yelb get svc
+## Description
+You can deploy sample applications on your Kubernetes cluster easily.
 
-ssh root@[TKG-DEMO-APPLIANCE-IP] -L 8081:192.168.2.245:80
-```
+## Requirement
+- [Tanzu Kubernetes Grid](https://tanzu.vmware.com/jp/kubernetes-grid) cluster running on vSphere or VMware Cloud on AWS
+
+## Author
+nao-yoshi
