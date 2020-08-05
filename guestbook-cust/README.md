@@ -1,1 +1,1 @@
-# PHP Guestbook Application with Redis - customized
+# PHP Guestbook with Redis - customized
