@@ -11,23 +11,23 @@ You can deploy container based application on your Kubernetes cluster easily. Th
 Copy this repo on your terminal. Then, run commands listed below.
 
 ```
-kuberctl create ns yelb
-kuberctl create ns metallb-system
-kuberctl create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
-kuberctl apply -n metallb-system -f lb.yaml
-kuberctl apply -n metallb-system -f lb-config.yaml
-kuberctl apply -n yelb -f yelb-lb.yaml
-kuberctl -n yelb get svc
+kubectl create ns yelb
+kubectl create ns metallb-system
+kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
+kubectl apply -n metallb-system -f lb.yaml
+kubectl apply -n metallb-system -f lb-config.yaml
+kubectl apply -n yelb -f yelb-lb.yaml
+kubectl -n yelb get svc
 ```
 
 ## Clean up
 Run commands listed below.
 ```
-kuberctl delete -n metallb-system -f lb.yaml
-kuberctl delete -n metallb-system -f lb-config.yaml
-kuberctl delete -n yelb -f yelb-lb.yaml
-kuberctl delete ns yelb
-kuberctl delete ns metallb-system
+kubectl delete -n metallb-system -f lb.yaml
+kubectl delete -n metallb-system -f lb-config.yaml
+kubectl delete -n yelb -f yelb-lb.yaml
+kubectl delete ns yelb
+kubectl delete ns metallb-system
 ```
 
 ## Author
