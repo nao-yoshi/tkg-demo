@@ -1,5 +1,5 @@
-# tkg-demo
-Sample yaml for TKG demo
+# yelb demo
+Sample yaml for yelb application.
 
 ```
 k create ns yelb
