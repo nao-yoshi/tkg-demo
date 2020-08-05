@@ -8,10 +8,10 @@ You can deploy a simple guestbook application on your Kubernetes cluster very ea
 - Kubernetes cluster
 
 ## Usage
-TBD
+See the offical document from [here](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/). 
 
 ## Clean up
-TBD
+See the offical document from [here](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/). 
 
 ## Author
 nao-yoshi
