@@ -1,4 +1,4 @@
-# yelb demo
+# Yelb Demo Application
 Yelb is a simple demo application provided by [here](https://github.com/mreferre/yelb). It contains UI server(JS and Nginx), App server(Ruby), Postgesql DB and Redis Cache. 
 
 ## Description
