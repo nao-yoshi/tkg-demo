@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: master
-        image: k8s.gcr.io/redis:e2e  # or just image: redis
+        image: naoyoshi/gb-redis   #k8s.gcr.io/redis:e2e  # or just image: redis
         resources:
           requests:
             cpu: 100m
@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: slave
-        image: gcr.io/google_samples/gb-redisslave:v1
+        image: naoyoshi/gb-redis-slave   #gcr.io/google_samples/gb-redisslave:v1
         resources:
           requests:
             cpu: 100m
@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: naoyoshi/gb-ui-cust1    #gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
             cpu: 100m
