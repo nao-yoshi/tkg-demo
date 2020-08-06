@@ -10,22 +10,22 @@
   <body ng-controller="RedisCtrl">
     <div style="width: 70%; margin-left: 40px">
       <h1><b>Guestbook</b></h1>
-          <h3>Site = <span style="color: #0000FF;">SDDC TKY-01</span></h3>
-          <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #A4C6FF;">
-        <h4><b>Write down your massage here!</b></h4>
-    <form>
-    <fieldset>
-    <input ng-model="msg" placeholder="Messages" class="form-control" type="text" name="input"><br>
-    <button type="button" class="btn btn-primary" ng-click="controller.onRedis()">Submit</button>
-    </fieldset>
-    </form>
-    <br><h4><b>Massages</b></h4>
-    <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: white;">
-      <div ng-repeat="msg in messages track by $index">
-          <H3> {{msg}} </H3>
+      <h3>Site = <span style="color: #0000FF;">SDDC TKY-01</span></h3>
+        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #A4C6FF;">
+          <h4><b>Write down your massage here!</b></h4>
+          <form>
+            <fieldset>
+            <input ng-model="msg" placeholder="Messages" class="form-control" type="text" name="input"><br>
+            <button type="button" class="btn btn-primary" ng-click="controller.onRedis()">Submit</button>
+            </fieldset>
+          </form><br>
+        <h4><b>Massages</b></h4>
+        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color: white;">
+          <div ng-repeat="msg in messages track by $index">
+            <H3> {{msg}} </H3>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
   </body>
 </html>
