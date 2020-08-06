@@ -7,10 +7,10 @@ metadata:
     role: master
     tier: backend
 spec:
-  type: LoadBalancer   #(If you use ClusterIP, comment here)
+  #type: LoadBalancer   #(If you use LoadBalancer, uncomment here)
   ports:
   - port: 6379
-    #targetPort: 6379    #(If you use ClusterIP, uncomment here)
+    targetPort: 6379    #(If you use LoadBalancer, comment here)
   selector:
     app: redis
     role: master
