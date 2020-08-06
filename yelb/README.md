@@ -1,11 +1,14 @@
 # Yelb Demo Application
-Yelb is a simple demo application provided by [here](https://github.com/mreferre/yelb). It contains UI server(JS and Nginx), App server(Ruby), Postgesql DB and Redis Cache. 
+Yelb is a simple demo application provided by [here](https://github.com/mreferre/yelb). It contains UI server(JS and Nginx), App server(Ruby), Postgesql DB and Redis Cache. With this repo, you can deploy Yelb on your Kubernetes cluster.
 
 ## Description
-You can deploy container based application on your Kubernetes cluster easily. This repo intends to perform a demonstration or practice for operation on Kubernetes.
+You can deploy container based Yelb application on your Tanzu Kubernetes Grid(TKG) cluster. This repo intends to perform a demonstration or practice for operation on Kubernetes.
 
 ## Requirement
-- Kubernetes cluster
+- Your Linux PC with TKG CLI installed
+- TKG cluster running on vSphere or [VMC](https://cloud.vmware.com/jp/vmc-aws) 
+  - Management/Workload clusters are deployed
+  - TKG Network for Workload cluster with DHCP enabled (ex. 192.168.0.0/24)
 
 ## Usage
 Copy this repo on your terminal. Then, run commands listed below.
