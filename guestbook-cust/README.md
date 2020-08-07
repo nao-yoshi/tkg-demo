@@ -13,10 +13,13 @@ Idias of the deployment is shown below.
 
 ### Replication
 Massages you submitted are replicated by Redis from the production site to failover site immediately.
-![Replication](pics/site2.png)
+![Replication](pics/step2.png)
 
 ## Requirement
-- Tanzu Kubernetes Grid
+- Your Linux PC with TKG CLI installed
+- TKG cluster running on vSphere or VMC
+  - Management/Workload clusters are deployed
+  - TKG Network for Workload cluster with DHCP enabled (ex. 192.168.0.0/24)
 
 ## Usage
 ### Initial deployment
