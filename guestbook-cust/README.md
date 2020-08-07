@@ -9,7 +9,7 @@ Idias of the deployment is shown below.
 
 ![Deployment1](pics/Deployment.jpg)
 
-![Deployment2](pics/2sites_deployment.jpg)
+![Deployment2](pics/2sites_Deployment.jpg)
 
 ## Requirement
 - Tanzu Kubernetes Grid
