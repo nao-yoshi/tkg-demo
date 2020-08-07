@@ -6,8 +6,8 @@ If you deploy the guestbook application on the two site, written massage data ca
 
 ### Deployment
 Idias of the deployment is shown below.
-![Deployment1](../pics/Deployment.jpg)
-![Deployment2](../pics/2site_deployment.jpg)
+![Deployment1](pics/Deployment.jpg)
+![Deployment2](pics/2site_deployment.jpg)
 
 ## Requirement
 - Tanzu Kubernetes Grid
