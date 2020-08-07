@@ -11,6 +11,10 @@ Idias of the deployment is shown below.
 
 ![Deployment2](pics/2sites_Deployment.png)
 
+### Replication
+Massages you submitted are replicated by Redis from the production site to failover site immediately.
+![Replication](pics/site2.png)
+
 ## Requirement
 - Tanzu Kubernetes Grid
 
