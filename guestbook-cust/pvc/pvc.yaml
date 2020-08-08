@@ -4,7 +4,7 @@ metadata:
   name: pvc1
   namespace: default
   labels:
-        app: redis-master
+    app: redis-master
 spec:
   storageClassName: standard
   accessModes:
@@ -19,7 +19,7 @@ metadata:
   name: pvc2
   namespace: default
   labels:
-        app: redis-slave
+    app: redis-slave
 spec:
   storageClassName: standard
   accessModes:
