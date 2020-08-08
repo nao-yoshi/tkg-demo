@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-redis-master
+  name: pvc1
   namespace: default
   labels:
-        app: pvc
+        app: redis-master
 spec:
   storageClassName: standard
   accessModes:
@@ -16,10 +16,10 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-redis-slave
+  name: pvc2
   namespace: default
   labels:
-        app: pvc
+        app: redis-slave
 spec:
   storageClassName: standard
   accessModes:
