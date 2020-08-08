@@ -1,4 +1,4 @@
-# PHP Guestbook with Redis - customized
+# Message Board 
 This is an example guestbook application with PHP and Redis running on Kubernetes cluster. This repo intends to perform a demonstration or practice of operation on Kubernetes environment.
 
 ## Description
