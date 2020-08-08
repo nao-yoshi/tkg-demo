@@ -132,6 +132,7 @@ metadata:
     role: slave
     tier: backend
 spec:
+  type: LoadBalancer
   ports:
   - port: 6379
   selector:
