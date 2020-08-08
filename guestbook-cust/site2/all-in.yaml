@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: naoyoshi/gb-ui-cust2    #gcr.io/google-samples/gb-frontend:v4
+        image: naoyoshi/mb-ui-site2    #gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
             cpu: 100m
