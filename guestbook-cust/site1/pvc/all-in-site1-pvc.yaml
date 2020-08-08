@@ -89,7 +89,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: naoyoshi/gb-ui-cust1
+        image: naoyoshi/mb-ui
         resources:
           requests:
             cpu: 100m
