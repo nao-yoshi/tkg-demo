@@ -1,6 +1,8 @@
 harbor
 
 
+https://github.com/goharbor/harbor-helm
+
 
 
 helm install harbor --namespace harbor-system harbor/harbor \
