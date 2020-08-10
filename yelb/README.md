@@ -37,6 +37,6 @@ Delete all deployments, services and namespaces which you have deployed above.
     kubectl delete ns yelb
     kubectl delete ns metallb-system
     ```
-
+    
 ## Author
 nao-yoshi
