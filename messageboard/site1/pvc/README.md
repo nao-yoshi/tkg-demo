@@ -31,7 +31,7 @@ Clone this repo on your terminal. Then, run commands listed below.
     ```
 4. Deploy Yelb
     ```
-    kubectl apply -f all-in-site1.yaml
+    kubectl apply -f all-in-site1-pvc.yaml
     kubectl get svc  #You can check the ExternalIP
     ```
 4. Access http://ExternalIP
@@ -39,7 +39,7 @@ Clone this repo on your terminal. Then, run commands listed below.
 ## Clean up
 Delete all deployments, services and namespaces which you have deployed above.
 ```
-kubectl delete -f all-in-site1.yaml
+kubectl delete -f all-in-site1-pvc.yaml
 kubectl delete -f lb-config.yaml
 kubectl delete -f pvc.yaml
 kubectl delete -f cs.yaml
