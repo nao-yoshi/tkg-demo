@@ -30,15 +30,13 @@ Clone this repo on your terminal. Then, run commands listed below.
 
 ## Clean up
 Delete all deployments, services and namespaces which you have deployed above.
-    ```
-    kubectl delete -n metallb-system -f lb.yaml
-    ```
-    ```
-    kubectl delete -n metallb-system -f lb-config.yaml
-    kubectl delete -n yelb -f yelb-lb.yaml
-    kubectl delete ns yelb
-    kubectl delete ns metallb-system
-    ```
+```
+kubectl delete -n metallb-system -f lb.yaml
+kubectl delete -n metallb-system -f lb-config.yaml
+kubectl delete -n yelb -f yelb-lb.yaml
+kubectl delete ns yelb
+kubectl delete ns metallb-system
+```
 
 ## Author
 nao-yoshi
