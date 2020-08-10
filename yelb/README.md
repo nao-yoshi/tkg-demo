@@ -11,27 +11,32 @@ You can deploy container based Yelb application on your Tanzu Kubernetes Grid(TK
   - TKG Network for Workload cluster with DHCP enabled (ex. 192.168.0.0/24)
 
 ## Usage
-Copy this repo on your terminal. Then, run commands listed below.
-
-```
-kubectl create ns yelb
-kubectl create ns metallb-system
-kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
-kubectl apply -n metallb-system -f lb.yaml
-kubectl apply -n metallb-system -f lb-config.yaml
-kubectl apply -n yelb -f yelb-lb.yaml
-kubectl -n yelb get svc
-```
+Clone this repo on your terminal. Then, run commands listed below.
+1. Open lb.yaml file, then add IP range that you want to apply for External IPs.
+2. Deploy MetalLB
+    ```
+    kubectl create ns metallb-system
+    kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
+    kubectl apply -n metallb-system -f lb.yaml
+    kubectl apply -n metallb-system -f lb-config.yaml
+    ```
+3. Deploy Yelb
+    ```
+    kubectl create ns yelb
+    kubectl apply -n yelb -f yelb-lb.yaml
+    kubectl -n yelb get svc  #You can check the ExternalIP
+    ```
+4. Access http://<ExternalIP>
 
 ## Clean up
-Run commands listed below.
-```
-kubectl delete -n metallb-system -f lb.yaml
-kubectl delete -n metallb-system -f lb-config.yaml
-kubectl delete -n yelb -f yelb-lb.yaml
-kubectl delete ns yelb
-kubectl delete ns metallb-system
-```
+Delete all deployments, services and namespaces which you have deployed above.
+    ```
+    kubectl delete -n metallb-system -f lb.yaml
+    kubectl delete -n metallb-system -f lb-config.yaml
+    kubectl delete -n yelb -f yelb-lb.yaml
+    kubectl delete ns yelb
+    kubectl delete ns metallb-system
+    ```
 
 ## Author
 nao-yoshi
