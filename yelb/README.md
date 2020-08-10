@@ -26,7 +26,7 @@ Clone this repo on your terminal. Then, run commands listed below.
     kubectl apply -n yelb -f yelb-lb.yaml
     kubectl -n yelb get svc  #You can check the ExternalIP
     ```
-4. Access http://<ExternalIP>
+4. Access http://ExternalIP
 
 ## Clean up
 Delete all deployments, services and namespaces which you have deployed above.
