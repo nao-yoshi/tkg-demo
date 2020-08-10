@@ -1,8 +1,8 @@
 # Message Board 
-This is an example guestbook application with PHP and Redis running on Kubernetes cluster. This repo intends to perform a demonstration or practice of operation on Kubernetes environment.
+This is an example message board application with PHP and Redis running on Kubernetes cluster. This repo intends to perform a demonstration or practice of operation on Kubernetes environment.
 
 ## Description
-If you deploy the guestbook application on the two site, written massage data can be replicated between both sites.
+If you deploy the Message Board application on the two site, written massage data can be replicated between both sites.
 
 ### Deployment
 Idias of the deployment is shown below.
@@ -24,7 +24,7 @@ Massages you submitted are replicated by Redis from the production site to failo
 ## Usage
 ### Initial deployment
 1. Deploy MetalLB on both sites.
-2. Deploy Guestbook application on both site.
+2. Deploy Message Board application on both site.
 3. Change the replication target of Redis-slave server on the fialover site from Redis-master to the Redis-master on the production site.
 
 ### Failover
@@ -32,7 +32,7 @@ Massages you submitted are replicated by Redis from the production site to failo
 2. Change the replication target of Redis-slave server on the failover site from Redis-master on the production site to the failover (local) site.
 
 ## Clean up
-1. Delete Guestbook application.
+1. Delete Message Board application.
 2. Delete MetalLB.
 
 ## Author
