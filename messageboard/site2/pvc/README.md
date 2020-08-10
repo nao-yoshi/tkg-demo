@@ -41,6 +41,7 @@ Delete all deployments, services and namespaces which you have deployed above.
 ```
 kubectl delete -f all-in-site2-pvc.yaml
 kubectl delete -f lb-config.yaml
+kubectl delete -f lb.yaml
 kubectl delete -f pvc.yaml
 kubectl delete -f cs.yaml
 kubectl delete ns metallb-system
