@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-master
+  labels:
+    app: redis
+    role: master
+    tier: backend
+spec:
+  type: LoadBalancer   #(If you use LoadBalancer, uncomment here)
+  ports:
+  - port: 6379
+    #targetPort: 6379    #(If you use LoadBalancer, comment here)
+  selector:
+    app: redis
+    role: master
+    tier: backend
