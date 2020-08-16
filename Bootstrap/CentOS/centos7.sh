@@ -39,8 +39,11 @@ sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -
 sudo chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 sudo kubectl version --client
+echo "alias k='kubectl'" >> .bashrc
+source .bashrc
 
 echo "==================================================="
 echo "generate ssh pub key"
 ssh-keygen -t rsa -b 4096
 ssh-add ~/.ssh/id_rsa
+
