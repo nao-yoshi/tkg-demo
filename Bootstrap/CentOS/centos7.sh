@@ -14,8 +14,8 @@ sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 
 echo "==================================================="
-echo "install vim, git"
-sudo yum install -y vim git
+echo "install vim, git, wget, gzip"
+sudo yum install -y vim git wget gzip
 
 echo "==================================================="
 echo "install Docker"
