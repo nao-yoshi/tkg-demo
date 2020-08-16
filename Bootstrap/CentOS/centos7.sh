@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "==================================================="
-echo "update"
-sudo yum update -y
+# echo "==================================================="
+# echo "update"
+# sudo yum update -y
 
 echo "==================================================="
 echo "set timezone as JST"
