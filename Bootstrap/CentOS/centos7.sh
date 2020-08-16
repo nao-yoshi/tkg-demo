@@ -11,7 +11,7 @@ sudo timedatectl set-timezone Asia/Tokyo
 echo "==================================================="
 echo "disable firewall as for PoC"
 sudo systemctl stop firewalld
-sudo systemctl disabled firewalld
+sudo systemctl disable firewalld
 
 echo "==================================================="
 echo "install vim, git"
