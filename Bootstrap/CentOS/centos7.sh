@@ -6,7 +6,7 @@ sudo yum update -y
 
 echo "==================================================="
 echo "set timezone as JST"
-sudo cp /usr/share/zoneinfo/Japan /etc/localtime
+sudo timedatectl set-timezone Asia/Tokyo
 
 echo "==================================================="
 echo "disable firewall as for PoC"
